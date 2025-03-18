@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<div className="flex text-lg">
-				<div className="w-1/3 grow bg-rose-600 text-white">
+				<div className="w-1/3 grow bg-rose-800 text-white">
 					<img src="/me.jpeg" className="w-auto h-[265px]" alt="" />
 					<div className="p-4 text-lg text-white">
 						<Divider />
@@ -54,11 +54,11 @@ export default function Home() {
 						<p
 							className={`font-bold my-4 ${headingFont.className}`}
 						>
-							Fähigkeiten & Kenntnisse
+							Wichtige Fähigkeiten
 						</p>
 						<div>
 							{skillGroups.map((skillGroup) => (
-								<div key={skillGroup.group}>
+								<div key={skillGroup.group} className="my-4">
 									<p>
 										<b>{skillGroup.group}</b>
 									</p>
@@ -68,7 +68,7 @@ export default function Home() {
 											key={skill.name}
 										/>
 									))}
-									<Divider className="my-4 bg-white" />
+									<Divider className=" bg-white" />
 								</div>
 							))}
 							<p>

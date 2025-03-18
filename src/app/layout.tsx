@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
-// import { Libre_Bodoni } from 'next/font/google'
-import './globals.css'
 import { Rufina } from 'next/font/google'
 import { Roboto_Flex } from 'next/font/google'
+import './globals.css'
 
 export const bodyFont = Roboto_Flex({
 	weight: ['400', '700'],

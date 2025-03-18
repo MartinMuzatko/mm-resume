@@ -179,7 +179,7 @@ export const softSkills: SoftSkillGroup = {
 export const companies: Company[] = [
 	{
 		name: 'Eviden Germany GmbH',
-		timespan: '01.04.2013 – Jetzt',
+		timespan: '01.04.2023 – 31.01.2025',
 		objective: (
 			<p>
 				Eviden (ehemals Atos) ist ein Technologieführer der nächsten
@@ -191,60 +191,60 @@ export const companies: Company[] = [
 			</p>
 		),
 		assignments: [
-			{
-				customer: 'SEDI RehaFact',
-				timespan: '07.01.2025 – Jetzt',
-				objective: (
-					<p>
-						SEDI RehaFact wird seit über 20 Jahren entwickelt um
-						Patientendaten und Aufträge zwischen
-						Krankenhausinformationssystemen und Kostenträgern zu
-						vermitteln.
-					</p>
-				),
-				role: 'Projektleiter',
-				tasks: [
-					'Angebote, Dienstleistungs-, und Wartungsverträge sowie Lizenzen ausstellen und verwalten',
-					'Wartungs- und Lizenzverträge sowie Leistungsbescheinigungen dokumentieren und pflegen',
-					'Kundengespräche und Beratungen zu Preisänderungen und Produkterweiterungen führen',
-					'Rechnungsmahnungen, Buchungsprüfungen und Controlling der Rechnungsausschreibungen durchführen',
-					'Monatsabschlussaktivitäten, Kostenrückstellungen und eigenständige Kostenprüfungen erledigen',
-					'Zeitkonten der Mitarbeiter überprüfen und freigeben',
-					'Das Produktteam von 4 Entwicklern anleiten sowie die Produktentwicklung steuern',
-					'Support E-Mail-Postfach verwalten und Produktmanagement Anfragen bearbeiten',
-				],
-				programming: [],
-				tools: [
-					'SAP',
-					'Azure Boards',
-					'Microsoft Suite',
-					'Agile Development (SCRUM)',
-				],
-			},
-			{
-				customer: 'Entwickler-Dienstleistungsabteilung',
-				objective: (
-					<p>
-						Teamlead und Manager-Stellvertretung in einer Abteilung
-						für Kundenprojekte und Dienstleistungen mit Fokus auf
-						Public Services und Military.
-					</p>
-				),
-				role: 'Teamlead',
-				timespan: '01.08.2024-Jetzt',
-				programming: [],
-				tasks: [
-					'Verantwortung für ein Team von 20 Entwicklern die in verschiedenen Kundenprojekten eingesetzt werden',
-					'Onboarding, Offboarding, Personalentwicklung und Weiterbildung der Entwickler',
-					'Hiring sowie Technische Interviews und Vertragserstellung von neuen Mitarbeitern',
-					'Finanzreporting mit Zielsetzung und Budgetierung',
-					'Verwaltung und Organisation der Entwickler-Hardware',
-					'Kommunikation mit dem Kunden und Abstimmung der Anforderungen für die jeweiligen Kandidaten',
-					'Zeitbuchungen und Urlaubsanträge verwalten',
-					'Aktive Mitgestaltung im größeren Führungskreis sowie in der Unternehmensstrategie',
-				],
-				tools: [],
-			},
+			// {
+			// 	customer: 'SEDI RehaFact',
+			// 	timespan: '07.01.2025 – Jetzt',
+			// 	objective: (
+			// 		<p>
+			// 			SEDI RehaFact wird seit über 20 Jahren entwickelt um
+			// 			Patientendaten und Aufträge zwischen
+			// 			Krankenhausinformationssystemen und Kostenträgern zu
+			// 			vermitteln.
+			// 		</p>
+			// 	),
+			// 	role: 'Projektleiter',
+			// 	tasks: [
+			// 		'Angebote, Dienstleistungs-, und Wartungsverträge sowie Lizenzen ausstellen und verwalten',
+			// 		'Wartungs- und Lizenzverträge sowie Leistungsbescheinigungen dokumentieren und pflegen',
+			// 		'Kundengespräche und Beratungen zu Preisänderungen und Produkterweiterungen führen',
+			// 		'Rechnungsmahnungen, Buchungsprüfungen und Controlling der Rechnungsausschreibungen durchführen',
+			// 		'Monatsabschlussaktivitäten, Kostenrückstellungen und eigenständige Kostenprüfungen erledigen',
+			// 		'Zeitkonten der Mitarbeiter überprüfen und freigeben',
+			// 		'Das Produktteam von 4 Entwicklern anleiten sowie die Produktentwicklung steuern',
+			// 		'Support E-Mail-Postfach verwalten und Produktmanagement Anfragen bearbeiten',
+			// 	],
+			// 	programming: [],
+			// 	tools: [
+			// 		'SAP',
+			// 		'Azure Boards',
+			// 		'Microsoft Suite',
+			// 		'Agile Development (SCRUM)',
+			// 	],
+			// },
+			// {
+			// 	customer: 'Entwickler-Dienstleistungsabteilung',
+			// 	objective: (
+			// 		<p>
+			// 			Teamlead und Manager-Stellvertretung in einer Abteilung
+			// 			für Kundenprojekte und Dienstleistungen mit Fokus auf
+			// 			Public Services und Military.
+			// 		</p>
+			// 	),
+			// 	role: 'Teamlead',
+			// 	timespan: '01.08.2024-Jetzt',
+			// 	programming: [],
+			// 	tasks: [
+			// 		'Verantwortung für ein Team von 20 Entwicklern die in verschiedenen Kundenprojekten eingesetzt werden',
+			// 		'Onboarding, Offboarding, Personalentwicklung und Weiterbildung der Entwickler',
+			// 		'Hiring sowie Technische Interviews und Vertragserstellung von neuen Mitarbeitern',
+			// 		'Finanzreporting mit Zielsetzung und Budgetierung',
+			// 		'Verwaltung und Organisation der Entwickler-Hardware',
+			// 		'Kommunikation mit dem Kunden und Abstimmung der Anforderungen für die jeweiligen Kandidaten',
+			// 		'Zeitbuchungen und Urlaubsanträge verwalten',
+			// 		'Aktive Mitgestaltung im größeren Führungskreis sowie in der Unternehmensstrategie',
+			// 	],
+			// 	tools: [],
+			// },
 			{
 				customer: 'Deutsche Flugsicherung',
 				role: 'Full-Stack Developer, DevOps Engineer',
@@ -402,7 +402,7 @@ export const companies: Company[] = [
 				customer: 'Still GmbH - Fleetmanagement',
 				role: 'Full-Stack Developer, DevOps Engineer',
 				timespan: '01.10.2019 – 30.09.2020',
-				objective: <p></p>,
+				objective: '',
 				tasks: [
 					'Konzeption und Entwicklung einer Lösung zur Echtzeitüberwachung von beweglichen Industrie-Assets (AGVs).',
 					'Überwachung und Reduktion von Unfällen in automatisierten industriellen Umgebungen.',
@@ -471,7 +471,7 @@ export const companies: Company[] = [
 	},
 	{
 		name: 'K15t Software GmbH',
-		objective: <p></p>,
+		objective: '',
 		timespan: '01.02.2016 – 30.09.2017',
 		assignments: [
 			{
@@ -511,7 +511,7 @@ export const companies: Company[] = [
 	},
 	{
 		name: 'E & E Commerce GmbH',
-		objective: <p></p>,
+		objective: '',
 		timespan: '01.06.2015 – 31.01.2016',
 		assignments: [
 			{
@@ -551,7 +551,7 @@ export const companies: Company[] = [
 	},
 	{
 		name: 'Cashpoint Sportwetten',
-		objective: <p></p>,
+		objective: '',
 		timespan: '01.11.2014 – 31.04.2015',
 		assignments: [
 			{
@@ -585,7 +585,7 @@ export const companies: Company[] = [
 	},
 	{
 		name: 'B&G Consulting & Commerce GmbH',
-		objective: <p></p>,
+		objective: '',
 		timespan: '01.08.2013 – 31.04.2014',
 		assignments: [
 			{
@@ -619,7 +619,7 @@ export const companies: Company[] = [
 	},
 	{
 		name: 'Neuherz & Partner GmbH',
-		objective: <p></p>,
+		objective: '',
 		timespan: '',
 		assignments: [
 			{
