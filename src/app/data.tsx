@@ -24,6 +24,7 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'Marketing', level: 80, years: 5 },
 			{ name: 'Immobilien & Facility Management', level: 80, years: 4 },
 			{ name: 'Luft- und Raumfahrtindustrie', level: 70, years: 2 },
+			{ name: 'Steuerberatung', level: 50, years: 1 },
 			{ name: 'Gesundheitswesen', level: 25, years: 1 },
 		],
 	},
@@ -178,6 +179,72 @@ export const softSkills: SoftSkillGroup = {
 
 export const companies: Company[] = [
 	{
+		name: 'Truststone Software GmbH',
+		timespan: '01.04.2025-Jetzt',
+		objective: (
+			<p>
+				TrustStone Software GmbH ist ein Startup mit Sitz in Hamburg.
+				Das kanzlei.land wurde 2011 in der Hamburger Kanzlei
+				steueragenten.de zunächst für eigene Mandanten und Mitarbeiter
+				unter dem Namen Steuerbüro.online entwickelt. Im Laufe der Zeit
+				interessierten sich immer mehr Kanzleien für die neuartige
+				Mandantenplattform, welche mit ihrem Bedarf skalieren musste.
+			</p>
+		),
+		assignments: [
+			{
+				customer: 'Kanzlei.Kand',
+				timespan: '01.06.2025-31.11.2025',
+				role: 'Senior Frontend Developer',
+				objective: (
+					<p>
+						Das kanzlei.Land ist eine Software As A Service Lösung
+						um die Prozesse wie Lohnbuchsteuer, Finanzbuchhaltung
+						und Einkommenssteuer von Steuerkanzleien zu
+						digitalisieren und die Kommunikation zu zentralisieren.
+						Mit über 450 Kanzleien und 100.000 Nutzern die täglich
+						auf die Cloud Plattform zugreifen, ist der performante
+						und effiziente Zugriff auf die Webbasierte Plattform
+						essentiell für den Erfolg ihrer Kunden. Durch die
+						Vernetzung mit Schnittstellen zu DATEV, können Kunden
+						ihre zahlreichen Daten synchronisieren und verarbeiten.
+					</p>
+				),
+				tasks: [
+					'Mitentwicklung der SaaS Plattform kanzlei.Land für Steuerberater und deren Mandanten.',
+					'Konzeption und Entwicklung von neuen Features in Abstimmung mit dem Produktmanagement und Stakeholdern.',
+					'Effektive Einführung von KI Tools wie Cursor (Claude Sonnet) sowie Etablierung von Cursor Rules und LLM Dokumentation.',
+					'Modernisierung und Refactoring von bestehenden Code Basen mit Fokus auf Performance, Wartbarkeit und Skalierbarkeit.',
+					'Einführung von User Experience Guidelines und Barrierefreiheit (Accessibility).',
+					'Wartung und Monitoring des ausgerollten Produkts mit Hilfe von Grafana, Sentry, Metabase und Matomo.',
+					'Dokumentation und Mentoring zu den Themen Entwicklungsprozesse, Architektur, Best Practices.',
+					'Auslagerung und Modularisierung der hauseigenen UI Komponenten Bibliothek für Wiederverwendung in anderen Projekten.',
+				],
+				programming: [
+					'React, Redux, Tanstack',
+					'PHP, Composer',
+					'Bootstrap, TailwindCSS',
+					'Typescript, HTML, CSS, SQL',
+					'Vitest',
+				],
+				tools: [
+					'Gitlab Pipelines',
+					'Functional Programming',
+					'Domain Driven Design',
+					'Docker, Kubernetes, Helm',
+					'npm, Security Audits',
+					'eslint, prettier, sonarqube',
+					'Pair Programming & Code',
+					'Reviews',
+					'Agile LESS Framework',
+					'Figma, OpenAPI Stoplight',
+					'Sentry, Grafana, Matomo,',
+					'Metabase',
+				],
+			},
+		],
+	},
+	{
 		name: 'Eviden Germany GmbH',
 		timespan: '01.04.2023 – 31.01.2025',
 		objective: (
@@ -191,60 +258,60 @@ export const companies: Company[] = [
 			</p>
 		),
 		assignments: [
-			// {
-			// 	customer: 'SEDI RehaFact',
-			// 	timespan: '07.01.2025 – Jetzt',
-			// 	objective: (
-			// 		<p>
-			// 			SEDI RehaFact wird seit über 20 Jahren entwickelt um
-			// 			Patientendaten und Aufträge zwischen
-			// 			Krankenhausinformationssystemen und Kostenträgern zu
-			// 			vermitteln.
-			// 		</p>
-			// 	),
-			// 	role: 'Projektleiter',
-			// 	tasks: [
-			// 		'Angebote, Dienstleistungs-, und Wartungsverträge sowie Lizenzen ausstellen und verwalten',
-			// 		'Wartungs- und Lizenzverträge sowie Leistungsbescheinigungen dokumentieren und pflegen',
-			// 		'Kundengespräche und Beratungen zu Preisänderungen und Produkterweiterungen führen',
-			// 		'Rechnungsmahnungen, Buchungsprüfungen und Controlling der Rechnungsausschreibungen durchführen',
-			// 		'Monatsabschlussaktivitäten, Kostenrückstellungen und eigenständige Kostenprüfungen erledigen',
-			// 		'Zeitkonten der Mitarbeiter überprüfen und freigeben',
-			// 		'Das Produktteam von 4 Entwicklern anleiten sowie die Produktentwicklung steuern',
-			// 		'Support E-Mail-Postfach verwalten und Produktmanagement Anfragen bearbeiten',
-			// 	],
-			// 	programming: [],
-			// 	tools: [
-			// 		'SAP',
-			// 		'Azure Boards',
-			// 		'Microsoft Suite',
-			// 		'Agile Development (SCRUM)',
-			// 	],
-			// },
-			// {
-			// 	customer: 'Entwickler-Dienstleistungsabteilung',
-			// 	objective: (
-			// 		<p>
-			// 			Teamlead und Manager-Stellvertretung in einer Abteilung
-			// 			für Kundenprojekte und Dienstleistungen mit Fokus auf
-			// 			Public Services und Military.
-			// 		</p>
-			// 	),
-			// 	role: 'Teamlead',
-			// 	timespan: '01.08.2024-Jetzt',
-			// 	programming: [],
-			// 	tasks: [
-			// 		'Verantwortung für ein Team von 20 Entwicklern die in verschiedenen Kundenprojekten eingesetzt werden',
-			// 		'Onboarding, Offboarding, Personalentwicklung und Weiterbildung der Entwickler',
-			// 		'Hiring sowie Technische Interviews und Vertragserstellung von neuen Mitarbeitern',
-			// 		'Finanzreporting mit Zielsetzung und Budgetierung',
-			// 		'Verwaltung und Organisation der Entwickler-Hardware',
-			// 		'Kommunikation mit dem Kunden und Abstimmung der Anforderungen für die jeweiligen Kandidaten',
-			// 		'Zeitbuchungen und Urlaubsanträge verwalten',
-			// 		'Aktive Mitgestaltung im größeren Führungskreis sowie in der Unternehmensstrategie',
-			// 	],
-			// 	tools: [],
-			// },
+			{
+				customer: 'SEDI RehaFact',
+				timespan: '07.01.2025 – 31.03.2025',
+				objective: (
+					<p>
+						SEDI RehaFact wird seit über 20 Jahren entwickelt um
+						Patientendaten und Aufträge zwischen
+						Krankenhausinformationssystemen und Kostenträgern zu
+						vermitteln.
+					</p>
+				),
+				role: 'Projektleiter',
+				tasks: [
+					'Angebote, Dienstleistungs-, und Wartungsverträge sowie Lizenzen ausstellen und verwalten',
+					'Wartungs- und Lizenzverträge sowie Leistungsbescheinigungen dokumentieren und pflegen',
+					'Kundengespräche und Beratungen zu Preisänderungen und Produkterweiterungen führen',
+					'Rechnungsmahnungen, Buchungsprüfungen und Controlling der Rechnungsausschreibungen durchführen',
+					'Monatsabschlussaktivitäten, Kostenrückstellungen und eigenständige Kostenprüfungen erledigen',
+					'Zeitkonten der Mitarbeiter überprüfen und freigeben',
+					'Das Produktteam von 4 Entwicklern anleiten sowie die Produktentwicklung steuern',
+					'Support E-Mail-Postfach verwalten und Produktmanagement Anfragen bearbeiten',
+				],
+				programming: [],
+				tools: [
+					'SAP',
+					'Azure Boards',
+					'Microsoft Suite',
+					'Agile Development (SCRUM)',
+				],
+			},
+			{
+				customer: 'Entwickler-Dienstleistungsabteilung',
+				objective: (
+					<p>
+						Teamlead und Manager-Stellvertretung in einer Abteilung
+						für Kundenprojekte und Dienstleistungen mit Fokus auf
+						Public Services und Military.
+					</p>
+				),
+				role: 'Teamlead',
+				timespan: '01.08.2024-31.03.2025',
+				programming: [],
+				tasks: [
+					'Verantwortung für ein Team von 20 Entwicklern die in verschiedenen Kundenprojekten eingesetzt werden',
+					'Onboarding, Offboarding, Personalentwicklung und Weiterbildung der Entwickler',
+					'Hiring sowie Technische Interviews und Vertragserstellung von neuen Mitarbeitern',
+					'Finanzreporting mit Zielsetzung und Budgetierung',
+					'Verwaltung und Organisation der Entwickler-Hardware',
+					'Kommunikation mit dem Kunden und Abstimmung der Anforderungen für die jeweiligen Kandidaten',
+					'Zeitbuchungen und Urlaubsanträge verwalten',
+					'Aktive Mitgestaltung im größeren Führungskreis sowie in der Unternehmensstrategie',
+				],
+				tools: [],
+			},
 			{
 				customer: 'Deutsche Flugsicherung',
 				role: 'Full-Stack Developer, DevOps Engineer',
