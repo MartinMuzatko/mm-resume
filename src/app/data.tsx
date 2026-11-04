@@ -1,19 +1,32 @@
-import { SkillGroup, SoftSkillGroup, Company } from './types'
+import { Skill, SkillGroup, SoftSkillGroup, Company } from './types'
+
+// Skills listed in more than one group; edit here to keep all groups in sync
+const sharedSkills = {
+	typescript: { name: 'TypeScript', level: 95, years: 8 },
+	javascript: { name: 'JavaScript (ECMAScript)', level: 95, years: 13 },
+	react: { name: 'React', level: 95, years: 6 },
+	nextjs: { name: 'Next.js', level: 85, years: 5 },
+	nodejs: { name: 'Node.js', level: 95, years: 10 },
+	html: { name: 'HTML/HTML5', level: 90, years: 16 },
+	responsiveCss: { name: 'Responsive CSS', level: 90, years: 11 },
+	tailwind: { name: 'Tailwind CSS', level: 90, years: 5 },
+	openApi: { name: 'Swagger/Open API', level: 80, years: 7 },
+} satisfies Record<string, Skill>
 
 export const skillGroups: SkillGroup[] = [
 	{
 		group: 'Featured Skills',
 		skills: [
-			{ name: 'TypeScript', level: 95, years: 7 },
-			{ name: 'JavaScript (ECMAScript)', level: 95, years: 13 },
-			{ name: 'React', level: 95, years: 6 },
-			{ name: 'Next.js', level: 85, years: 5 },
-			{ name: 'Node.js', level: 95, years: 10 },
-			{ name: 'HTML/HTML5', level: 90, years: 15 },
-			{ name: 'Responsive CSS', level: 90, years: 10 },
-			{ name: 'Tailwind CSS', level: 90, years: 5 },
+			sharedSkills.typescript,
+			sharedSkills.javascript,
+			sharedSkills.react,
+			sharedSkills.nextjs,
+			sharedSkills.nodejs,
+			sharedSkills.html,
+			sharedSkills.responsiveCss,
+			sharedSkills.tailwind,
 			{ name: 'HTTP', level: 90, years: 13 },
-			{ name: 'Swagger/Open API', level: 80, years: 6 },
+			sharedSkills.openApi,
 		],
 	},
 
@@ -34,27 +47,27 @@ export const skillGroups: SkillGroup[] = [
 	{
 		group: 'Frontend Development',
 		skills: [
-			{ name: 'JavaScript (ECMAScript)', level: 95, years: 13 },
-			{ name: 'TypeScript', level: 95, years: 7 },
-			{ name: 'React', level: 95, years: 6 },
-			{ name: 'Vue.js', level: 85, years: 5 },
+			sharedSkills.javascript,
+			sharedSkills.typescript,
+			sharedSkills.react,
+			{ name: 'Vue.js', level: 85, years: 6 },
 			{ name: 'Angular', level: 40, years: 3 },
-			{ name: 'HTML/HTML5', level: 90, years: 15 },
-			{ name: 'Responsive CSS', level: 90, years: 10 },
+			sharedSkills.html,
+			sharedSkills.responsiveCss,
 			{ name: 'GraphQL', level: 80, years: 6 },
-			{ name: 'Next.js', level: 85, years: 5 },
+			sharedSkills.nextjs,
 			{ name: 'Nuxt', level: 85, years: 5 },
-			{ name: 'Tailwind CSS', level: 90, years: 4 },
+			sharedSkills.tailwind,
 			{ name: 'Mantine', level: 90, years: 5 },
 			{ name: 'Material UI', level: 80, years: 4 },
 			{ name: 'Static Site Generation (SSG)', level: 80, years: 6 },
 			{ name: 'Progressive Web Apps (PWA)', level: 80, years: 6 },
 			{ name: 'Single Page Applications (SPA)', level: 80, years: 8 },
 			{ name: 'Multi Page Applications (MPA)', level: 80, years: 8 },
-			{ name: 'Swagger/Open API', level: 80, years: 6 },
+			sharedSkills.openApi,
 			{ name: 'DOM (Document Object Model)', level: 80, years: 10 },
 			{ name: 'Responsive Web Design', level: 80, years: 10 },
-			{ name: 'Prettier/ESLint', level: 80, years: 8 },
+			{ name: 'Prettier/ESLint', level: 80, years: 9 },
 			{ name: 'Storybook', level: 60, years: 2 },
 			{ name: 'UI/UX Design', level: 80, years: 5 },
 			{ name: 'Accessibility', level: 60, years: 5 },
@@ -69,23 +82,23 @@ export const skillGroups: SkillGroup[] = [
 	{
 		group: 'Backend Development',
 		skills: [
-			{ name: 'Node.js', level: 95, years: 9 },
+			sharedSkills.nodejs,
 			{ name: 'npm', level: 90, years: 9 },
-			{ name: 'RESTful APIs', level: 95, years: 10 },
-			{ name: 'Open API/Swagger', level: 80, years: 6 },
+			{ name: 'RESTful APIs', level: 95, years: 11 },
+			sharedSkills.openApi,
 			{ name: 'WebSockets', level: 80, years: 8 },
-			{ name: 'Microservices/API', level: 80, years: 5 },
+			{ name: 'Microservices/API', level: 80, years: 6 },
 			{ name: 'JWT (JSON Web Tokens)', level: 60, years: 3 },
 			{ name: 'Bash/CLI', level: 80, years: 7 },
-			{ name: 'Docker/Docker Compose', level: 80, years: 7 },
-			{ name: 'SQL', level: 80, years: 13 },
+			{ name: 'Docker/Docker Compose', level: 80, years: 8 },
+			{ name: 'SQL', level: 80, years: 14 },
 			{ name: 'RDBMS (Relational DB)', level: 80, years: 12 },
 			{ name: 'MariaDB', level: 80, years: 7 },
-			{ name: 'PostgreSQL', level: 80, years: 7 },
+			{ name: 'PostgreSQL', level: 80, years: 8 },
 			{ name: 'Keycloak', level: 60, years: 2 },
 			{ name: 'NoSQL/Redis', level: 40, years: 1 },
 			{ name: 'MongoDB', level: 40, years: 1 },
-			{ name: 'pnpm', level: 65, years: 2 },
+			{ name: 'pnpm', level: 65, years: 3 },
 			{ name: 'yarn', level: 75, years: 5 },
 			{ name: 'PHP', level: 90, years: 10 },
 			{ name: 'Java 21EE', level: 20, years: 2 },
@@ -104,9 +117,9 @@ export const skillGroups: SkillGroup[] = [
 			{
 				name: 'Git (Distributed Revision Control)',
 				level: 80,
-				years: 12,
+				years: 13,
 			},
-			{ name: 'GitHub/GitLab', level: 90, years: 12 },
+			{ name: 'GitHub/GitLab', level: 90, years: 13 },
 			{ name: 'Netlify', level: 80, years: 6 },
 			{ name: 'VSCode', level: 80, years: 6 },
 			{ name: 'SVN', level: 60, years: 3 },
@@ -127,10 +140,10 @@ export const skillGroups: SkillGroup[] = [
 		group: 'Testing',
 		skills: [
 			{ name: 'Jest', level: 90, years: 4 },
-			{ name: 'Vitest', level: 90, years: 3 },
+			{ name: 'Vitest', level: 90, years: 4 },
 			{ name: 'Cypress', level: 60, years: 2 },
 			{ name: 'Playwright', level: 40, years: 1 },
-			{ name: 'Unit Testing', level: 80, years: 6 },
+			{ name: 'Unit Testing', level: 80, years: 7 },
 			{ name: 'Test-Driven Development (TDD)', level: 80, years: 4 },
 			{ name: 'API/Web Services Testing', level: 70, years: 3 },
 			{ name: 'E2E (End 2 End) Testing', level: 60, years: 3 },
@@ -144,11 +157,11 @@ export const skillGroups: SkillGroup[] = [
 		skills: [
 			{ name: 'Functional Programming (FP)', level: 80, years: 6 },
 			{ name: 'Object-Oriented Programming (OOP)', level: 60, years: 4 },
-			{ name: 'Dependency Injection', level: 80, years: 5 },
+			{ name: 'Dependency Injection', level: 80, years: 6 },
 			{ name: 'SOLID Principles', level: 80, years: 5 },
-			{ name: 'Domain Driven Development (DDD)', level: 40, years: 2 },
+			{ name: 'Domain Driven Development (DDD)', level: 40, years: 3 },
 			{ name: 'MVC (Model-View-Controller)', level: 60, years: 4 },
-			{ name: 'Feature-Slice-Architektur', level: 70, years: 3 },
+			{ name: 'Feature-Slice-Architektur', level: 70, years: 4 },
 		],
 	},
 
@@ -157,14 +170,14 @@ export const skillGroups: SkillGroup[] = [
 		skills: [
 			{ name: 'Claude Code', level: 85, years: 2 },
 			{ name: 'Cursor', level: 80, years: 2 },
-			{ name: 'ChatGPT', level: 65, years: 2 },
+			{ name: 'Skills (Agent Skills)', level: 70, years: 2 },
+			{ name: 'ChatGPT', level: 65, years: 3 },
 			{ name: 'MCP (Model Context Protocol)', level: 60, years: 1 },
-			{ name: 'Skills (Agent Skills)', level: 60, years: 1 },
 			{ name: 'llms.txt', level: 50, years: 1 },
-			{ name: 'OpenRouter', level: 45, years: 1 },
-			{ name: 'OpenClaw', level: 40, years: 1 },
-			{ name: 'Hermes Agent', level: 40, years: 1 },
-			{ name: 'GrokBot', level: 35, years: 1 },
+			{ name: 'OpenRouter', level: 55, years: 1 },
+			{ name: 'OpenClaw', level: 45, years: 1 },
+			{ name: 'Hermes Agent', level: 45, years: 1 },
+			{ name: 'GrokBot', level: 70, years: 1 },
 		],
 	},
 
@@ -188,7 +201,7 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'Kanban', level: 60, years: 2 },
 			{ name: 'Consultancy and Coaching', level: 80, years: 7 },
 			{ name: 'Mentoring', level: 80, years: 7 },
-			{ name: 'JIRA', level: 80, years: 7 },
+			{ name: 'JIRA', level: 80, years: 8 },
 			{ name: 'Confluence', level: 80, years: 7 },
 		],
 	},
@@ -199,6 +212,7 @@ export const softSkills: SoftSkillGroup = {
 		{ name: 'Effektive Kommunikation' },
 		{ name: 'Organisation und Dokumentation' },
 		{ name: 'Schnelle Wissensaufnahme' },
+		{ name: 'Coaching' },
 		{ name: 'Führungskompetenzen' },
 		{ name: 'Einfühlvermögen' },
 		{ name: 'Kollaboration (Pair Programming und Code Reviews)' },
@@ -208,8 +222,16 @@ export const softSkills: SoftSkillGroup = {
 
 export const companies: Company[] = [
 	{
-		name: 'Quantrefy',
-		objective: '',
+		name: 'Quantrefy GmbH',
+		objective: (
+			<p>
+				Quantrefy ist ein deutsches Unternehmen für ESG-Daten im
+				Immobiliensektor sowie Energiesektor. Als One-Stop-Shop unterstützt es Eigentümer
+				und Verwalter von Immobilienportfolios bei Datenerfassung,
+				Analyse, Reporting (u. a. CRREM, EU-Taxonomie, GRESB, CSRD) und
+				Dekarbonisierung.
+			</p>
+		),
 		timespan: '30.03.2026-31.03.2027',
 		assignments: [
 			{
