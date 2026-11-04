@@ -24,9 +24,10 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'Marketing', level: 80, years: 5 },
 			{ name: 'Immobilien & Facility Management', level: 80, years: 4 },
 			{ name: 'Luft- und Raumfahrtindustrie', level: 70, years: 2 },
-			{ name: 'Steuerberatung', level: 50, years: 1 },
+			{ name: 'Steuerwesen', level: 50, years: 1 },
 			{ name: 'Gesundheitswesen', level: 25, years: 1 },
-			{ name: 'Energie', level: 50, years: 1 },
+			{ name: 'Energiesektor', level: 50, years: 1 },
+			{ name: 'Finanzwesen', level: 35, years: 1 },
 		],
 	},
 
