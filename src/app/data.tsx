@@ -60,6 +60,7 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'Wordpress', level: 60, years: 4 },
 			{ name: 'TYPO3', level: 40, years: 3 },
 			{ name: 'Figma', level: 40, years: 1 },
+			{ name: 'Testing Library', level: 70, years: 1 },
 		],
 	},
 
@@ -87,6 +88,11 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'PHP', level: 90, years: 10 },
 			{ name: 'Java 21EE', level: 20, years: 2 },
 			{ name: 'Python', level: 25, years: 1 },
+			{ name: 'C#', level: 55, years: 1 },
+			{ name: '.NET / ASP.NET Core', level: 55, years: 1 },
+			{ name: 'Entity Framework Core', level: 50, years: 1 },
+			{ name: 'Flyway (DB-Migrationen)', level: 60, years: 1 },
+			{ name: 'PDF/Excel-Generierung (LaTeX)', level: 50, years: 1 },
 		],
 	},
 
@@ -109,6 +115,9 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'Apache', level: 60, years: 6 },
 			{ name: 'Nginx', level: 40, years: 4 },
 			{ name: 'Cloud Apps Development', level: 60, years: 2 },
+			{ name: 'GitHub Actions', level: 65, years: 1 },
+			{ name: 'OpenTofu (Infrastructure as Code)', level: 40, years: 1 },
+			{ name: 'AWS Cognito', level: 40, years: 1 },
 		],
 	},
 
@@ -124,6 +133,7 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'API/Web Services Testing', level: 70, years: 3 },
 			{ name: 'E2E (End 2 End) Testing', level: 60, years: 3 },
 			{ name: 'BrowserStack', level: 60, years: 2 },
+			{ name: 'Testcontainers', level: 55, years: 1 },
 		],
 	},
 
@@ -136,6 +146,23 @@ export const skillGroups: SkillGroup[] = [
 			{ name: 'SOLID Principles', level: 80, years: 5 },
 			{ name: 'Domain Driven Development (DDD)', level: 40, years: 2 },
 			{ name: 'MVC (Model-View-Controller)', level: 60, years: 4 },
+			{ name: 'Feature-Slice-Architektur', level: 70, years: 3 },
+		],
+	},
+
+	{
+		group: 'KI-gestützte Entwicklung',
+		skills: [
+			{ name: 'Claude Code', level: 85, years: 2 },
+			{ name: 'Cursor', level: 80, years: 2 },
+			{ name: 'ChatGPT', level: 65, years: 2 },
+			{ name: 'MCP (Model Context Protocol)', level: 60, years: 1 },
+			{ name: 'Skills (Agent Skills)', level: 60, years: 1 },
+			{ name: 'llms.txt', level: 50, years: 1 },
+			{ name: 'OpenRouter', level: 45, years: 1 },
+			{ name: 'OpenClaw', level: 40, years: 1 },
+			{ name: 'Hermes Agent', level: 40, years: 1 },
+			{ name: 'GrokBot', level: 35, years: 1 },
 		],
 	},
 
