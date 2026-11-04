@@ -206,22 +206,13 @@ export const softSkills: SoftSkillGroup = {
 
 export const companies: Company[] = [
 	{
-		name: 'Truststone Software GmbH',
-		timespan: '01.04.2025-Jetzt',
-		objective: (
-			<p>
-				TrustStone Software GmbH ist ein Startup mit Sitz in Hamburg.
-				Das kanzlei.land wurde 2011 in der Hamburger Kanzlei
-				steueragenten.de zunächst für eigene Mandanten und Mitarbeiter
-				unter dem Namen Steuerbüro.online entwickelt. Im Laufe der Zeit
-				interessierten sich immer mehr Kanzleien für die neuartige
-				Mandantenplattform, welche mit ihrem Bedarf skalieren musste.
-			</p>
-		),
+		name: 'Quantrefy',
+		objective: '',
+		timespan: '30.03.2026-31.03.2027',
 		assignments: [
 			{
-				customer: 'Quantrefy - Wave Platform',
-				timespan: '30.03.2026-31.03.2027',
+				customer: 'Wave App',
+				timespan: '',
 				role: 'Fullstack Developer',
 				objective: (
 					<p>
@@ -270,6 +261,22 @@ export const companies: Company[] = [
 					'KI-gestützte Entwicklung (Claude Code, Cursor Rules)',
 				],
 			},
+		],
+	},
+	{
+		name: 'Truststone Software GmbH',
+		timespan: '01.04.2025-Jetzt',
+		objective: (
+			<p>
+				TrustStone Software GmbH ist ein Startup mit Sitz in Hamburg.
+				Das kanzlei.land wurde 2011 in der Hamburger Kanzlei
+				steueragenten.de zunächst für eigene Mandanten und Mitarbeiter
+				unter dem Namen Steuerbüro.online entwickelt. Im Laufe der Zeit
+				interessierten sich immer mehr Kanzleien für die neuartige
+				Mandantenplattform, welche mit ihrem Bedarf skalieren musste.
+			</p>
+		),
+		assignments: [
 			{
 				customer: 'Kanzlei.Kand',
 				timespan: '01.06.2025-31.11.2025',
