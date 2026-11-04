@@ -193,6 +193,57 @@ export const companies: Company[] = [
 		),
 		assignments: [
 			{
+				customer: 'Quantrefy - Wave Platform',
+				timespan: '30.03.2026-31.03.2027',
+				role: 'Fullstack Developer',
+				objective: (
+					<p>
+						Quantrefy entwickelt die Wave Platform, eine
+						cloudbasierte Plattform für Energiebroker und
+						Energiehändler. Sie digitalisiert den gesamten
+						Beschaffungsprozess für Strom und Gas: von der Erfassung
+						der Kundendaten (Lieferstellen, Zähler, Verbrauchsdaten)
+						über die Ausschreibung und den Vergleich von
+						Lieferantenangeboten bis Zuschlag, Vertragsgestaltung
+						und Abrechnung. Hinzu kommen Module für PPA-Verträge und
+						ein Certificate Broker für Handelsgeschäfte und Profit
+						and Loss-Auswertungen. Technisch besteht die Plattform
+						aus .NET-Microservices, zwei Vue-Frontends und einer
+						Infrastruktur in OpenTofu mit mehreren Umgebungen.
+						Ausschreibungsunterlagen, E-Mails, Excel-Exporte und
+						OnePager werden automatisiert als PDF bzw. Excel
+						erzeugt.
+					</p>
+				),
+				tasks: [
+					'Mitentwicklung der Wave App für den Ausschreibungsprozess: Verfahrensbrief mit PDF-Generierung, Textbausteinverwaltung mit Rich-Text-Editor (Tiptap), Kontaktpersonen, Dateiverwaltung, Freigabeanfragen und E-Mail-Versand',
+					'Entwicklung des Certificate Brokers: Trades, Rechnungen, Verkäufe, Profit and Loss Ansichten, Verknüpfung mit Stammdaten, Preismatrix',
+					'Umsetzung von Lieferantenangeboten: Preismodelle, automatische Vorschläge einheitlicher Positionsnamen, Duplikaterkennung und Massenbearbeitung von Bedingungen',
+					'Entwicklung komplexer Tabellen-Grids mit Inline-Bearbeitung und Massenänderung (Lieferstellen, Zähler, Lieferantenverträge)',
+					'Entwicklung von Backend-Endpunkten und Use-Cases in .NET sowie Datenbankmigrationen',
+					'Dokumenten- und Exportgenerierung: LaTeX-Templates für OnePager, Verfahrensbriefe und Interne Abschlussberichte, Excel-Export von Lieferstellen, Berechnungslogik für Margen und Rundung',
+					'Fehleranalyse und Behebung in Produktivprozessen, Refactoring wiederverwendbarer Komponenten für teamübergreifende Features',
+					'Einhaltung und Erweiterung von Linting-, Architektur- und Commit-Konventionen; Pull Requests und Code Reviews',
+					'Einsatz von KI-Tools (Claude Code) mit projektspezifischen Regeln im Entwicklungsalltag',
+				],
+				programming: [
+					'TypeScript, Vue 3 (Composition API), Pinia Colada, Zod, Tiptap, HTML, CSS',
+					'C#, .NET, ASP.NET Core, Entity Framework Core',
+					'PostgreSQL, SQL, Flyway',
+					'LaTeX, Excel-Generierung',
+					'Vitest, Testing Library, Testcontainers',
+				],
+				tools: [
+					'GitHub, GitHub Actions, Jira',
+					'OpenAPI mit generierten C#- und TypeScript-Clients',
+					'pnpm Monorepo, ESLint, Oxidation compiler (oxlint, oxfmt), Prettier',
+					'Docker, .NET Aspire, OpenTofu, AWS Cognito',
+					'Domain-driven Design, Feature-Slice-Architektur, Data Vault Modellierung',
+					'Pull Requests und Code Reviews',
+					'KI-gestützte Entwicklung (Claude Code, Cursor Rules)',
+				],
+			},
+			{
 				customer: 'Kanzlei.Kand',
 				timespan: '01.06.2025-31.11.2025',
 				role: 'Senior Frontend Developer',
